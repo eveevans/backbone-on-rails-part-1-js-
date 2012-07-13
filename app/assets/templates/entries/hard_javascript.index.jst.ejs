@@ -1,0 +1,11 @@
+<h1>Raffler</h1>
+
+<ul>
+  <%  var entry, _i, _len, _ref;
+      _ref = entries.models; %>  
+
+  <% for (_i=0, _len = _ref.length; _i< _len ; _i++){ %>
+    <% entry = _ref[_i]; %>
+    <li><%= entry.get('name') %></li>
+  <% } %>
+</ul>
